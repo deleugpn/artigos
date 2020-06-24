@@ -1,7 +1,13 @@
+.code {
+    font-size: 0.80rem;
+    line-height: 1.75rem;
+}
+
 .gatsby-highlight {
     background: #272822;
     color: white;
-    padding: 16px 8px;
+    padding: 1%px 1.5%px;
+    overflow: auto;
 }
 
 .gatsby-highlight .keyword {

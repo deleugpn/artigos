@@ -138,7 +138,6 @@ que está rodando o servidor web.
                     ->assertSee('Laravel');
         });
     }
-
 ```
 
 Uma outra forma de instruir o navegador a utilizar o endereço
