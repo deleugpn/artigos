@@ -62,7 +62,7 @@ const Bio = () => {
       />
       <p>
         <strong>{author}</strong><br />
-        Writing bad code for 10 years. Passionate about Laravel and AWS.
+        Escrevendo código ruim por 10 anos. Apaixonado por Laravel e AWS.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           <Image alt="twitter" fixed={data.twitter.childImageSharp.fixed} />
