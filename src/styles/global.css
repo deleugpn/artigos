@@ -1,0 +1,17 @@
+.gatsby-highlight {
+    background: #272822;
+    color: white;
+    padding: 10px 0px;
+}
+
+.gatsby-highlight .keyword {
+    color: #fd971f;
+}
+
+.gatsby-highlight .function {
+    color: #a6e22e;
+}
+
+.gatsby-highlight .string {
+    color: #ae81ff;
+}
