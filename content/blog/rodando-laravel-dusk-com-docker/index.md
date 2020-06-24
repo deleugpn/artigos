@@ -7,7 +7,7 @@ description: Usando docker-compose para rodar o Google Chrome
 Laravel Dusk é um pacote muito bacana que o Taylor desenvolveu
 para nos ajudar a rodar testes _end to end_ usando um navegador.
 Recentemente eu estava trabalhando em um projeto que faz uso 
-da sessão nativa do PHP ($_SESSION) e o phpunit não functiona
+da sessão nativa do PHP (`$_SESSION`) e o phpunit não functiona
 com o `session_start()` porque o PHP envia o PHPSESSID cookie
 na `header` da resposta. A maior parte do sistema é testada
 usando um mock na frente de uma classe que abstrai a sessão
