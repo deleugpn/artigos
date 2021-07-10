@@ -121,11 +121,19 @@ comandos:
 
 ```bash
 apk update
-apk add vim git samba docker docker-compose
+apk add bash vim git samba docker docker-compose
 rc-update add docker boot
 rc-update add samba boot
 service docker start
 service samba start
+```
+
+Agora que instalamos o bash, podemos modificar novamente o arquivo
+`/etc/ssh/sshd_conf` e adicionar o seguinte bloco:
+
+```
+Match User root
+  ForceCommand /bin/bash
 ```
 
 Depois de finalizar as instalações, fica faltando só configurar 
@@ -199,6 +207,15 @@ Certifique-se de ajustar o atributo `path` para apontar para a pasta que
 você deseja compartilhar entre o Alpine e o Windows. Certifique-se também
 de criar a pasta. Para reiniciar o serviço Samba, podemos executar
 `service samba restart`.
+
+#### git-completion.bash
+
+Para usar o `git-completion.bash`, é necessário instalar o `ncursus` para que
+o `tput` funcione. 
+
+```
+apk add ncursus
+```
 
 #### Conclusão
 
